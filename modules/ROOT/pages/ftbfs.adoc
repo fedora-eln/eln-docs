@@ -34,7 +34,7 @@ IMPORTANT: If the package doesn't build for Rawhide, fix that first!
 
 If the package doesn't build for Rawhide, fix that first!
 
-Is that message load and clear enough?
+Is that message loud and clear enough?
 Getting the package build fixed for Rawhide may very well be all that's
 needed to fix it for ELN as well.
 
