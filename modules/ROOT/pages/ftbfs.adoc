@@ -69,7 +69,7 @@ It is also shareable between earlier and later versions of Fedora and RHEL.
 Often it is better to use `<` to limit behaviors to RHEL 8 and earlier:
 
 ```
-%if 0%{?fedora} < 32 && 0%{?rhel} < 9)
+%if 0%{?fedora} < 32 && 0%{?rhel} < 9
   %global rhel8orearlier 1
 %else
   %global rhel9orlater 1
