@@ -9,6 +9,7 @@
 ** xref:ftbfs.adoc[Resolving ELN build failures]
 
 * Infrastructure
+** xref:branching.adoc[Branching]
 ** xref:compose.adoc[Compose]
 
 * xref:status.adoc[Status]

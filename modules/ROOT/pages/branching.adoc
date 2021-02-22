@@ -1,0 +1,38 @@
+= ELN Branching Events +
+
+== Fedora Branching ==
+Fedora Branching happens every 6 months, when Fedora Rawhide branches for the next release.  Example:  When Fedora Rawhide is branched to F35 and fedora-release is set to f36.
+
+=== Trigger for ELN Pipeline ===
+
+The eln build trigger needs to be updated to the latest version that is in fedora-release.  Using our original example.  We would change this to f36.
+
+Example pull request: https://github.com/fedora-ci/eln-build-trigger/pull/2
+
+=== ELN fedora release and repo ===
+
+==== Build fedora-release first ====
+
+```
+koji tag-build eln fedora-release-35-0.1
+koji wait-repo eln-build --build fedora-release-35-0.1
+# build fedora-release for ELN
+# Example: fedpkg build --skip-nvr-check --target eln
+koji wait-repo eln-build --build fedora-release-35-0.1.eln110
+koji untag-build eln fedora-release-35-0.1
+```
+
+==== Build fedora-repos after fedora-release is in buildroot ====
+
+```
+koji tag-build eln fedora-repos-35-0.2
+koji wait-repo eln-build --build fedora-repos-35-0.2
+# build fedora-repos for ELN
+# Example: fedpkg build --skip-nvr-check --target eln
+koji wait-repo eln-build --build fedora-repos-35-0.2.eln110
+koji untag-build eln fedora-repos-35-0.2
+```
+
+== RHEL Branching ==
+
+RHEL Branching happens every 3 years, when RHEL branches for the next release.  Example:  When RHEL is branched to RHEL 10.
