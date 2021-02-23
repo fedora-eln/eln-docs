@@ -11,6 +11,12 @@ Example pull request: https://github.com/fedora-ci/eln-build-trigger/pull/2
 
 === ELN fedora release and repo ===
 
+==== Check fedora-release ====
+
+After Fedora branching has happened, and fedora-release has been updated and built for the new version, check the fedora-release rpm spec file.  Verify that ```rhel_dist_version``` is set to the correct version.
+
+The fedora-release check is especially important if this is the fedora branching that corresponds to a RHEL version change.
+
 ==== Build fedora-release first ====
 
 ```
