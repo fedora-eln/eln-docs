@@ -3,6 +3,8 @@
 ELN SIG is a Fedora Special Interest Group which is responsible for the ELN
 project and its infrastructure.
 
+The official SIG membership list is maintained as part of our Github Organization and can be viewed https://github.com/orgs/fedora-eln/people[here].
+
 == Responsibilities
 
 * Own the scope and configuration of the `eln` disttag and buildroot (see
@@ -28,18 +30,22 @@ project and its infrastructure.
 
 == Communication
 
-* Mailing list: Add *[ELN]* to the subject of the mail to https://lists.fedoraproject.org/archives/list/devel@lists.fedoraproject.org/[devel@ mailing list]
+* Mailing list: Add *[ELN]* to the subject of an email to the https://lists.fedoraproject.org/archives/list/devel@lists.fedoraproject.org/[devel@ mailing list]
 
-* IRC: TBA
+* IRC: irc://freenode/#fedora-eln[#fedora-eln on Freenode]
 
 === Issue tracker
 
-* https://github.com/fedora-eln/eln
+* https://github.com/fedora-eln/eln/issues
 
 === Meetings
 
-TBA
+Meetings of the ELN Special Interest Group are held on Fridays at noon, US Eastern Time.
+
+The meeting agenda will generally be prepared in advance by opening tickets on the https://github.com/fedora-eln/eln/issues[issue tracker] and tagging them with the `meeting` label.
 
 == How to Join
 
-TBA
+Anyone may join the SIG by asking to become a member. If no existing SIG member *opposes* that request within a week, they're in. If an existing SIG member opposes, we will hold a regular vote at the next scheduled meeting as described above.
+
+Prospective members may ask to join by filing a "New Member Request" ticket on the https://github.com/fedora-eln/eln/issues/new/choose[issue tracker].
