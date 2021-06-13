@@ -23,7 +23,7 @@ The main Fedora ELN compose configuration file is stored in the official https:/
 repository in the ``eln`` branch.
 
 The Fedora ELN compose uses the Rawhide comps file stored in the https://pagure.io/fedora-comps repository
-and also the Rawhide module-defaults stored in thehttps://pagure.io/releng/fedora-module-defaults/ 
+and also the Rawhide module-defaults stored in the https://pagure.io/releng/fedora-module-defaults/
 repository.
 
 
