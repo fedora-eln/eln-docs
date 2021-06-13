@@ -5,3 +5,23 @@ Why ELN?::
     The Fedora distribution is, among other things, an https://docs.fedoraproject.org/en-US/quick-docs/fedora-and-red-hat-enterprise-linux/[upstream] for
     Red Hat Enterprise Linux (RHEL). By adjusting buildroot and assorted
     configurations, ELN allows Fedora contributors who work on RHEL and other similarly targeted downstreams to judge the state of upstream from their perspective. The benefit for the Fedora distribution is that contributors who work on both upstream and downstream stay more continuously connected to the state of Fedora -- especially, but not exclusively, Rawhide.
+
+How to build ELN package?::
+
+    ELN packages are built by using the `eln` target in Koji. See
+    xref:buildroot.adoc#building[Buildroot].
+    Generally one should not build packages for ELN directly, as there is an
+    automation enabled, which rebuilds the package for ELN as soon as it lands
+    in Fedora Rawhide.  In case of ELN build failures refer to
+    xref:ftbfs.adoc[Resolving ELN build failures]
+
+How to add package to ELN?::
+
+    ELN includes packages defined by the ELN Content Set configuration. See
+    xref:content_set.adoc[Content Set]
+
+How can I use ELN?::
+
+    ELN is a development environment which is not intended for production
+    use. To set up ELN environment you can use qcow-images, containers or chroot
+    via mock. See xref:deliverables.adoc[Deliverables]

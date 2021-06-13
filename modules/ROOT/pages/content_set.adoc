@@ -1,0 +1,5 @@
+= Content Set
+
+ELN Content Set can be explored via https://tiny.distro.builders/config-view--view-eln.html
+
+Content Set is managed via https://github.com/minimization/content-resolver
