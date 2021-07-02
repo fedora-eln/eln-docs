@@ -32,7 +32,7 @@ The official SIG membership list is maintained as part of our Github Organizatio
 
 * Mailing list: Add *[ELN]* to the subject of an email to the https://lists.fedoraproject.org/archives/list/devel@lists.fedoraproject.org/[devel@ mailing list]
 
-* IRC: irc://freenode/#fedora-eln[#fedora-eln on Freenode]
+* IRC: https://web.libera.chat/?channels=#fedora-eln[#fedora-eln on Libera]
 
 === Issue tracker
 
