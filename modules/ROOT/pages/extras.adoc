@@ -1,0 +1,44 @@
+= ELN Extras =
+
+ELN Extras are Fedora packages not in ELN that people want to be recompiled
+and treated as if they were.
+
+== Background
+
+There are two main reasons people want packages in ELN Extras.
+
+1 - Testing.  In order to test some ELN schenarios, a test packages
+needs to be built in the ELN enviroment.
+
+2 - Preparing for EPEL.  Some people know they want packages in the
+next version of EPEL.  Over time, it is very possible that their 
+packages in Fedora develop trates that make them not compile on a
+RHEL / ELN enviroment.  Or they might pick up dependencies that will
+have to be added to the EPEL enviroment.  Having packages in ELN
+Extras allows them to prepare for those problems far in advance.
+
+== How to Add a Package to ELN Extras
+
+Adding packages to ELN Extras, is the same as adding them to ELN.
+The only difference is that any Fedora packager can add packages
+to ELN Extras, while only a handful of people can add packages
+to ELN.
+
+
+=== Content Resolver
+
+Description of a Content Resolver
+
+=== Workloads
+
+Description of a workload
+
+
+==== Create a workload
+
+How to build and submit a workload yaml
+
+
+==== Workload best practices
+
+Some good things to do when creating workloads
