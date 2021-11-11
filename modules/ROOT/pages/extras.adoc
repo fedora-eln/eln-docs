@@ -1,21 +1,13 @@
-= ELN Extras =
+= ELN Extras
 
-ELN Extras are Fedora packages not in ELN that people want to be recompiled
-and treated as if they were.
-
-== Background
-
-There are two main reasons people want packages in ELN Extras.
-
-1 - Testing.  In order to test some ELN schenarios, a test packages
-needs to be built in the ELN enviroment.
-
-2 - Preparing for EPEL.  Some people know they want packages in the
-next version of EPEL.  Over time, it is very possible that their 
-packages in Fedora develop trates that make them not compile on a
-RHEL / ELN enviroment.  Or they might pick up dependencies that will
-have to be added to the EPEL enviroment.  Having packages in ELN
-Extras allows them to prepare for those problems far in advance.
+ELN-Extras is essentially an extension of Fedora ELN, with the primary
+difference being that the content in ELN-Extras will be defined by the
+Fedora/EPEL community, while ELN's content is largely decided upon by
+Red Hat management. This will offer users the opportunity to make sure
+their applications will work on upcoming releases of RHEL as well as
+providing a bootstrapping mechanism for EPEL. It will be far easier
+and quicker to get a compose of EPEL N+1 out the door if the initial
+packages have already been built for ELN-Extras.
 
 == How to Add a Package to ELN Extras
 
@@ -39,6 +31,22 @@ Description of a workload
 How to build and submit a workload yaml
 
 
-==== Workload best practices
+== ELN Extras Frequently Asked Questions
 
-Some good things to do when creating workloads
+Can I add any or all Fedora packages to ELN-Extras?::
+
+    You are attaching your name as the supporter of these packages.
+    You will be submitting these workload packages as pull requests.
+    The ELN SIG will review the pull requests and ask questions if 
+    things look strange or incorrect.  So, yes, if you are willing 
+    to support a package, it can be any Fedora package not in ELN.
+    And while we are not putting a firm limit on the number of packages
+    you can add to ELN Extras, the SIG is reviewing them and will
+    not merge requests that seem excessive for the person requesting them.
+
+If someone has already added a package to their workload, can I have the same package in mine?::
+
+Yes.  Content Resolver is setup to deal with a package in more than
+one workload, or a dependency in more than one workload.  It will show what
+workloads list, or require what packages.  It even takes a guess on who
+should be the owner of the package.
