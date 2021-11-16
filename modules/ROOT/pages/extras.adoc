@@ -16,20 +16,68 @@ The only difference is that any Fedora packager can add packages
 to ELN Extras, while only a handful of people can add packages
 to ELN.
 
+You add binary packages by creating and submitting workloads for 
+https://github.com/minimization/content-resolver#readme[Content Resolver]. 
+You submit them as pull requests at 
+https://github.com/minimization/content-resolver-input[content resolver input]. 
+The workloads go in the config directory.
 
-=== Content Resolver
+Once the workloads have been merged, Content Resolver works through
+all the dependencies of the workload, subtracts those packages that are
+already in ELN, and displays it in it's 
+https://tiny.distro.builders/view--view-eln-extras.html[ELN Extras view]
 
-Description of a Content Resolver
+After Content Resolver has worked it work, the ELN build process takes that
+list and adds it to the ELN Extras build list.
 
 === Workloads
 
-Description of a workload
+The full documentation on what goes in a workload yaml file can be found  as comments in the 
+https://github.com/minimization/content-resolver/blob/master/config_specs/workload.yaml[example workload yaml file].
 
+The create your initial workload yaml file, take that example yaml file, rename it,
+edit it, then submit it as a pull request.
 
-==== Create a workload
+The example workload yaml has an example for everything.  But we don't need everything 
+for ELN Extras.
 
-How to build and submit a workload yaml
+==== Workload Required Sections
 
+* document: feedback-pipeline-workload
+** This exact line, do not change it
+* version: 1
+** This exact line, do not change it
+* name: <workload name>
+** Keep this short, spaces are allowed
+* description: <workload description>
+** Longer description, but must be on one line
+* maintainer: <FAS and/or Github ID>
+** Who will be the maintainer of the packages in this workload for ELN and EPEL.
+** Do not put someone elses name as maintainer without their permission.
+* labels: eln-extras
+** Although multiple labels can be listed, for eln-extras, only list the one
+* packages:
+** List of binary packages in the workgroup
+** DO NOT LIST SOURCE PACKAGE NAMES IN PACKAGES LIST.
+** LIST ALL THE BINARY PACKAGES YOU NEED.
+** If you are listing a package in the optional arch specific package list, do not list it here.
+
+==== Workload Optional Sections
+
+* arch_packages:
+** If you have a package that is not built on all arches, you need to list it on all the arches it it built on.
+** All noarch packages go in the regular package: section.
+* options:
+** If you need to use the options, you can.
+
+==== Workload Unused Sections
+
+* modules_disable:
+** We do not have modules in ELN Extras
+* groups:
+** We do not have groups in ELN Extras
+* package_placeholders:
+** We do not process package_placeholders in ELN Extras
 
 == ELN Extras Frequently Asked Questions
 
