@@ -31,7 +31,17 @@ What are the differences between Rawhide and ELN?::
     differences between the built Rawhide and ELN packages.  Listing all of those differences
     is beyond the scope of this document.
     
+What are the differences between the Rawhide and ELN kernel?::
 
+    Kernel is one of the packages that uses %if fedora conditionals extensively. While the source
+    tree is the same, the Rawhide kernel uses a Fedora configuration and the ELN kernel is built
+    with a RHEL kernel configuration. As a result, the Rawhide kernel tends to enable support for
+    a much larger range of hardware and features.  A notable difference is that the ELN kernel
+    does not support btrfs at all, making it difficult to install and use on systems that were
+    installed as Fedora Workstation edition, or in Fedora 35 or newer Cloud images which use btrfs
+    by default.  There are also differences in baseline supported hardware, meaning the ELN kernel
+    may not run on older systems where the Rawhide kernel runs just fine.
+    
 When should I use the rpm macro %\{eln}?::
 
     Never.  In nearly all cases, you actually want to use the %\{rhel} macro. 
