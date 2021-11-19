@@ -14,7 +14,7 @@ instances (production and staging) and therefore two places with the latest ELN 
 
 |===
 
-Periodic compose is generated every hour.
+Periodic compose is generated every hour. The latest production compose is also mirrored at http://mirror.facebook.net/fedora-eln/production/latest-Fedora-ELN/
 
 
 == Compose configuration files ==

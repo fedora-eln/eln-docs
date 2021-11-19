@@ -7,6 +7,8 @@ WARNING: Fedora ELN is a development environment. It is not intended for product
 
 The latest production compose of Fedora ELN packages is available at https://odcs.fedoraproject.org/composes/production/latest-Fedora-ELN/
 
+A mirror of this compose is also available at http://mirror.facebook.net/fedora-eln/production/latest-Fedora-ELN/
+
 See also xref:compose.adoc[Compose].
 
 == Container image
