@@ -1,6 +1,6 @@
 site: 
   title: Local Preview
-  start_page: eln::index
+  start_page: eln::index.adoc
 content:
   sources:
    - url: .
@@ -16,5 +16,5 @@ output:
   destinations: 
   - provider: archive 
 runtime:
-  pull: true
+  fetch: true
   cache_dir: ./cache
