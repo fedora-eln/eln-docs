@@ -1,5 +1,7 @@
 = Fedora ELN project
 
+image::eln-logo.svg[ELN]
+
 == Summary
 
 ELN is a new buildroot and compose process for Fedora that takes Fedora
