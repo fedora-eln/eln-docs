@@ -10,8 +10,8 @@ What is the role of ELN with respect to CentOS Stream?::
 
      ELN is a continuous rebuild of Fedora Rawhide sources. Once in a while a
      certain snapshot of the ELN is used to bootstrap the new CentOS Stream for
-     the new major RHEL release. There is no continuous synce between ELN and
-     ant version of the CentOS Stream. Bootstrap activity happens only once for
+     the new major RHEL release. There is no continuous sync between ELN and
+     any version of the CentOS Stream. Bootstrap activity happens only once for
      each CentOS Stream version. See the picture:
 
 
