@@ -1,50 +1,51 @@
-= ELN Branching Events +
+= Fedora ELN Branching Events =
 
 == Fedora Branching ==
-Fedora Branching happens every 6 months, when Fedora Rawhide branches for the next release.  Example:  When Fedora Rawhide is branched to F35 and fedora-release is set to f36.
+Fedora Branching happens every 6 months, when Fedora Rawhide branches for the next release. All examples used in this portion of the document will be for when Fedora Rawhide is branched for Fedora 39 and Rawhide becomes Fedora 40.
 
-=== Trigger for ELN Pipeline ===
 
-The eln build trigger needs to be updated to the latest version that is in fedora-release.  Using our original example.  We would change this to f36.
+=== Branching Tasks ===
+. Pause the Fedora ELN package rebuilds in ELNBuildSync
+** Set the `configuration.control.pause` value in the ELNBuildSync https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to `true`
+. Update `rpm.macro.eln` for the `eln-build` Koji tag with the next available number.footnote:elntag[Current settings are visible on the https://koji.fedoraproject.org/koji/taginfo?tagID=22493[eln-build koji page]] For example, if the current value is 128
 
-Example pull request: https://github.com/fedora-ci/eln-build-trigger/pull/2
+ $ koji edit-tag eln-build rpm.macro.eln 129
 
-=== ELN fedora release and repo ===
+. Wait for the Fedora ELN Buildroot to regenerate
 
-==== Check fedora-release ====
+ $ koji wait-repo eln-build
 
-After Fedora branching has happened, and fedora-release has been updated and built for the new version, check the fedora-release rpm spec file.  Verify that ```rhel_dist_version``` is set to the correct version.
+. Update `configuration.trigger.rpms` in https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to the next Fedora tag (`f40`)
 
-The fedora-release check is especially important if this is the fedora branching that corresponds to a RHEL version change.
+. Resume ELN package rebuilds in ELNBuildSync
+** Set the `configuration.control.pause` value in https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to `false`
 
-==== Build fedora-release first ====
+NOTE: It's not necessary to wait for ongoing builds to complete before updating the macro and trigger. The only reason for the pause is to ensure that nothing else starts before the new trigger is set.
 
-```
-koji tag-build eln fedora-release-35-0.1
-koji wait-repo eln-build --build fedora-release-35-0.1
-# build fedora-release for ELN
-# Example: fedpkg build --skip-nvr-check --target eln
-koji wait-repo eln-build --build fedora-release-35-0.1.eln110
-koji untag-build eln fedora-release-35-0.1
-```
 
-==== Build fedora-repos after fedora-release is in buildroot ====
+== Fedora Branching and a new CentOS Stream ==
+This event occurs at the Fedora Branching event that corresponds to the launch of a new major release of CentOS Stream. Generally, this will be every three years (or six Fedora releases). All examples used in this portion of the document will be for when Fedora Rawhide is branched for Fedora 40, Rawhide becomes Fedora 41 and CentOS Stream 10 is being launched.
 
-```
-koji tag-build eln fedora-repos-35-0.2
-koji wait-repo eln-build --build fedora-repos-35-0.2
-# build fedora-repos for ELN
-# Example: fedpkg build --skip-nvr-check --target eln
-koji wait-repo eln-build --build fedora-repos-35-0.2.eln110
-koji untag-build eln fedora-repos-35-0.2
-```
+=== Branching Tasks ===
+==== On the Fedora Side ====
+. Pause the Fedora ELN package rebuilds in ELNBuildSync
+** Set the `configuration.control.pause` value in the ELNBuildSync https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to `true`
+. Wait for any ongoing Fedora ELN builds to complete.
+** Detecting this requires access to the ELNBuildSync logs which are non-public at this time.
+. Disable the DistroBuildSync from Fedora ELN to CentOS Stream
+** Set `enabled: false` in the CentOS Stream distrobaker.yaml footnote:internal[Requires access inside the Red Hat firewall]
+. Update `rpm.macro.eln` for the `eln-build` Koji tag with the next available number.footnote:elntag[Current settings are visible on the https://koji.fedoraproject.org/koji/taginfo?tagID=22493[eln-build koji page]] For example, if the current value is 135
 
-== RHEL Branching ==
+ $ koji edit-tag eln-build rpm.macro.eln 136
 
-RHEL Branching happens every 3 years, when RHEL branches for the next release.  Example:  When RHEL is branched to RHEL 10.
+. Update `rpm.macro.rhel` for the `eln-build` Koji tag with the next major release value.footnote:elntag[Current settings are visible on the https://koji.fedoraproject.org/koji/taginfo?tagID=22493[eln-build koji page]] For example, if the current value is 10
 
-=== Change rpm.macro.rhel ===
+ $ koji edit-tag eln-build rpm.macro.rhel 11
 
-rpm.macro.rhel needs to be updated to be the next RHEL release.
-
-You can see the current setting on the https://koji.fedoraproject.org/koji/taginfo?tagID=22493[eln-build koji page].
+. Update the https://src.fedoraproject.org/rpms/fedora-release[fedora-release] package
+.. Set `rhel_dist_version` to the same value as `rpm.macro.rhel` above.
+.. Rebuild the `fedora-release` package, coordinating with Fedora Release Engineering
+. Update `configuration.trigger.rpms` in https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to the next Fedora tag (`f41`)
+. Resume ELN package rebuilds in ELNBuildSync
+** Set the `configuration.control.pause` value in https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to `false`
+. Schedule a mass-rebuild of Fedora ELN to pick up any pending RHEL X+1 changes.footnote:[For example, frame pointer enablement is conditionalized as `%if 0%{rhel} >= 11`]
