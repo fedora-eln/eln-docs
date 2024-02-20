@@ -27,7 +27,7 @@ by default:
 |==============================================================================================================
 |Macro         |Value         | Description
 | `%\{fedora}` | `%\{nil}`    | Unset
-| `%\{rhel}`   | `9`          | Integer value one higher than the most recently released major version of RHEL
+| `%\{rhel}`   | `11`         | Integer value one higher than the most recently released major version of RHEL
 | `%\{eln}`    | `XY`         | Version of the eln buildroot. Not tied to any RHEL or Fedora release.
 | `%\{dist}`   | `.eln%\{eln}`| eln-disttag, for example `.eln101`
 |==============================================================================================================
