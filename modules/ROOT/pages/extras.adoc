@@ -85,6 +85,17 @@ for ELN Extras.
 * package_placeholders:
 ** We do not process package_placeholders in ELN Extras
 
+=== ELN-only packages
+
+ELN-only packages can also be added to ELN Extras. One example is
+https://docs.fedoraproject.org/en-US/epel/epel-faq/#rhel_8_has_binaries_in_the_release_but_is_missing_some_corresponding__devel_package._how_do_i_build_a_package_that_needs_that_missing__devel_package[-epel packages]
+which are often used to provide subpackages that have been unshipped or otherwise excluded in RHEL. These packages can be added to ELN Extras, with some additional caveats:
+* similarly to regular -epel packages, the package needs to only produce the needed subpackages and nothing else
+* the package needs to be manually built for ELN from the "eln" branch in dist-git
+* the SRPM name has to be different from the corresponding Rawhide package (https://src.fedoraproject.org/rpms/libxcrypt-epel[example])
+* the SRPM name has to be added to the exclusion list in ELNBuildSync to avoid accidental rebuilds (https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/commit/f50f8d99596cee37fa2b15cd3c62f1c8e86e72fa[example])
+* the needed subpackages need to be added to Content Resolver for ELN Extras as usual (https://github.com/minimization/content-resolver-input/pull/1124[example])
+
 == ELN Extras Frequently Asked Questions
 
 Can I add any or all Fedora packages to ELN-Extras?::
