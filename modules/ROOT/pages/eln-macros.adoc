@@ -1,0 +1,37 @@
+= ELN Macros
+
+The ELN buildroot defines the %\{rhel\} macro as the next major version of RHEL
+(currently, 11), and does not define the %\{fedora\} macro.  For almost all cases,
+this is sufficient for differentiating build behavior between Fedora and ELN.
+
+== Request Permission
+
+To avoid unnecessary divergence between ELN and the next version of RHEL,
+the ELN SIG must approve each request for use of the %\{eln\} macro.
+
+To request permission, create an https://github.com/fedora-eln/eln/issues[ELN Issue].
+
+Be sure to include why you need to distinguish ELN from RHEL and/or CentOS Stream,
+and why use of the %\{fedora\}, %\{rhel\}, and/or %\{centos\} macros does not suffice.
+
+== Approved Uses of the %\{eln\} Macro
+
+|===
+| Package | Justification
+
+| fedora-logos | Fedora-specific package, not imported into CS/RHEL
+| fedora-release | Fedora-specific package, not imported into CS/RHEL
+| fedora-repos | Fedora-specific package, not imported into CS/RHEL
+| freeipa | RHEL-specific branding, does not exist in Fedora/ELN
+| gpsd | Package is partly provided in CS/RHEL and partly in EPEL, but ELN and ELN Extras are not that separated
+| grub2 | Secure boot signing differs between CS/RHEL and Fedora/ELN
+| kernel | Secure boot signing differs between CS/RHEL and Fedora/ELN
+| libreport | ELN bugs are to be reported to Fedora infrastructure, not CS/RHEL
+| lorax-templates-rhel | Downstream repo used as Source URL
+| lynx | RHEL-specific branding, does not exist in Fedora/ELN
+| mock-core-configs | ELN has separate mock configs from CS and RHEL
+| openssl | FIPS certification is for RHEL only, not for CS/ELN/Fedora
+| python-rpm-macros | CS/RHEL support multiple Python versions, ELN only supports latest (https://github.com/fedora-eln/eln/issues/73[#73])
+| scap-security-guide | RHEL-specific subpackage does not exist in CS/ELN/Fedora
+| virt-v2v | CS/RHEL-specific dependency does not exist in Fedora/ELN
+|===

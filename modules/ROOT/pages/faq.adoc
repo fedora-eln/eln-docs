@@ -55,5 +55,4 @@ What are the differences between the Rawhide and ELN kernel?::
 When should I use the rpm macro %\{eln}?::
 
     Never.  In nearly all cases, you actually want to use the %\{rhel} macro. 
-    If you think you need to use the %\{eln} macro, file a ticket on the 
-    https://github.com/fedora-eln/eln/issues/new/choose[issue tracker] with your justification.
+    See xref:eln-macros.adoc[ELN Macros] for more information.

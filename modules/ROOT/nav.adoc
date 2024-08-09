@@ -8,6 +8,7 @@
 ** xref:buildroot.adoc[Buildroot]
 ** xref:ftbfs.adoc[Resolving ELN build failures]
 ** xref:eln-branch.adoc[ELN Branch]
+** xref:eln-macros.adoc[ELN Macros]
 ** xref:extras.adoc[ELN Extras]
 
 * Infrastructure
