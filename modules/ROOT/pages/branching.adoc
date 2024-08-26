@@ -49,4 +49,4 @@ This event occurs at the Fedora Branching event that corresponds to the launch o
 . Update `configuration.trigger.rpms` in https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to the next Fedora tag (`f41`)
 . Resume ELN package rebuilds in ELNBuildSync
 ** Set the `configuration.control.pause` value in https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to `false`
-. Schedule a mass-rebuild of Fedora ELN to pick up any pending RHEL X+1 changes.footnote:[For example, frame pointer enablement is conditionalized as `%if 0%{rhel} >= 11`]
+. Schedule a mass-rebuild of Fedora ELN to pick up any pending RHEL X+1 changes.footnote:[For example, frame pointer enablement is conditionalized as `%if 0%{?rhel} >= 11`]
