@@ -24,7 +24,7 @@ If you are a Fedora maintainer of the package needing a branch, then
 the next step if fairly simple.
 
 ....
-fedpkg request-branch eln --sl rawhide:2099-12-01 --repo <package>
+fedpkg request-branch eln --no-auto-module --repo <package>
 ....
 
 === You ARE NOT the Fedora maintainer
@@ -50,7 +50,7 @@ Clear out Description and put
 ....
 Please branch <package> in eln
 
-fedpkg request-branch eln --sl rawhide:2099-12-01 --repo <package>
+fedpkg request-branch eln --no-auto-module --repo <package>
 
 I will be maintaining the eln branch.
 
