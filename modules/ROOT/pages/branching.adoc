@@ -45,7 +45,7 @@ This event occurs at the Fedora Branching event that corresponds to the launch o
 . Update the https://src.fedoraproject.org/rpms/fedora-release[fedora-release] package
 .. Set `rhel_dist_version` to the same value as `rpm.macro.rhel` above.
 .. Rebuild the `fedora-release` package, coordinating with Fedora Release Engineering
-. Update `image-build.version` in https://pagure.io/pungi-fedora/blob/eln/f/fedora/override.conf to the same value as `rpm.macro.rhel` above with a `.0` suffix
+. Update `kiwibuild_version` in https://pagure.io/pungi-fedora/blob/eln/f/fedora/override.conf to the same value as `rpm.macro.rhel` above
 . Update `configuration.trigger.rpms` in https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to the next Fedora tag (`f41`)
 . Resume ELN package rebuilds in ELNBuildSync
 ** Set the `configuration.control.pause` value in https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to `false`
