@@ -26,12 +26,15 @@ and why use of the %\{fedora\}, %\{rhel\}, and/or %\{centos\} macros does not su
 | gpsd | Package is partly provided in CS/RHEL and partly in EPEL, but ELN and ELN Extras are not that separated
 | grub2 | Secure boot signing differs between CS/RHEL and Fedora/ELN
 | kernel | Secure boot signing differs between CS/RHEL and Fedora/ELN
+| libreoffice | RHEL-specific branding, does not make sense for Fedora/ELN
 | libreport | ELN bugs are to be reported to Fedora infrastructure, not CS/RHEL
 | lorax-templates-rhel | Downstream repo used as Source URL
 | lynx | RHEL-specific branding, does not exist in Fedora/ELN
 | mock-core-configs | ELN has separate mock configs from CS and RHEL
 | openssl | FIPS certification is for RHEL only, not for CS/ELN/Fedora
 | python-rpm-macros | CS/RHEL support multiple Python versions, ELN only supports latest (https://github.com/fedora-eln/eln/issues/73[#73])
+| python-requests | Package is partly provided in CS/RHEL and partly in EPEL, but ELN and ELN Extras are not that separated
+| python-urllib3 | Package is partly provided in CS/RHEL and partly in EPEL, but ELN and ELN Extras are not that separated
 | scap-security-guide | RHEL-specific subpackage does not exist in CS/ELN/Fedora
 | virt-v2v | CS/RHEL-specific dependency does not exist in Fedora/ELN
 |===
