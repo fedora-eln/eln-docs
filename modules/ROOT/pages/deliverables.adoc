@@ -5,20 +5,18 @@ WARNING: Fedora ELN is a development environment. It is not intended for product
 
 == Compose
 
-The latest production compose of Fedora ELN packages is available at https://odcs.fedoraproject.org/composes/production/latest-Fedora-ELN/
-
-A mirror of this compose is also available at http://mirror.facebook.net/fedora-eln/production/latest-Fedora-ELN/
+The latest production compose of Fedora ELN packages is available at https://download.fedoraproject.org/pub/eln/1/
 
 See also xref:compose.adoc[Compose].
 
 == Container image
 
-As a part of the compose, we build also container images which are then published to Quay.io image registry under the name `quay.io/fedoraci/fedora:eln`.
+As a part of the compose, we build also container images which are then published to Quay.io image registry under the name ``quay.io/fedora/eln```.
 
 To run Fedora ELN container use:
 
 ```
-$ podman run -it quay.io/fedoraci/fedora:eln
+$ podman run -it quay.io/fedora/eln
 ```
 
 == Mock environment
