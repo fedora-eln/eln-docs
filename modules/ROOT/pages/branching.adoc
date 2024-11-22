@@ -13,7 +13,7 @@ Fedora Branching happens every 6 months, when Fedora Rawhide branches for the ne
 
 . Wait for the Fedora ELN Buildroot to regenerate
 
- $ koji wait-repo eln-build
+ $ koji wait-repo eln-build --request
 
 . Update `configuration.trigger.rpms` in https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to the next Fedora tag (`f42`)
 
@@ -41,6 +41,10 @@ This event occurs at the Fedora Branching event that corresponds to the launch o
 . Update `rpm.macro.rhel` for the `eln-build` Koji tag with the next major release value.footnote:elntag[Current settings are visible on the https://koji.fedoraproject.org/koji/taginfo?tagID=22493[eln-build koji page]] For example, if the current value is 10
 
  $ koji edit-tag eln-build -x rpm.macro.rhel=11
+
+. Wait for the Fedora ELN Buildroot to regenerate
+
+ $ koji wait-repo eln-build --request
 
 . Update the https://src.fedoraproject.org/rpms/fedora-release[fedora-release] package
 .. Set `rhel_dist_version` to the same value as `rpm.macro.rhel` above.
