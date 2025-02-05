@@ -7,10 +7,6 @@ Fedora Branching happens every 6 months, when Fedora Rawhide branches for the ne
 === Branching Tasks ===
 . Pause the Fedora ELN package rebuilds in ELNBuildSync
 ** Set the `configuration.control.pause` value in the ELNBuildSync https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to `true`
-. Update `rpm.macro.eln` for the `eln-build` Koji tag with the next available number.footnote:elntag[Current settings are visible on the https://koji.fedoraproject.org/koji/taginfo?tagID=22493[eln-build koji page]] For example, if the current value is 141
-
- $ koji edit-tag eln-build -x rpm.macro.eln=142
-
 . Wait for the Fedora ELN Buildroot to regenerate
 
  $ koji wait-repo eln-build --request
@@ -19,6 +15,10 @@ Fedora Branching happens every 6 months, when Fedora Rawhide branches for the ne
 
 . Resume ELN package rebuilds in ELNBuildSync
 ** Set the `configuration.control.pause` value in https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to `false`
+
+. Once a new batch has been processed,footnote:tagdelay[This timing avoids an accidental mass rebuild from being started due to the mass retagging of rawhide builds with the new tag.] then update `rpm.macro.eln` for the `eln-build` Koji tag with the next available number.footnote:elntag[Current settings are visible on the https://koji.fedoraproject.org/koji/taginfo?tagID=22493[eln-build koji page]] For example, if the current value is 141
+
+ $ koji edit-tag eln-build -x rpm.macro.eln=142
 
 NOTE: It's not necessary to wait for ongoing builds to complete before updating the macro and trigger. The only reason for the pause is to ensure that nothing else starts before the new trigger is set.
 
