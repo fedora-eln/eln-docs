@@ -9,7 +9,7 @@ the steps for making that happen.
 To prevent a large amount of unmaintained ELN branches as well as to
 ensure that ELN's automation does not continue to overwrite changes with
 builds from the Rawhide branch, the ELN SIG must approve each request
-for a branch. 
+for a branch.
 
 To request permission, create an https://github.com/fedora-eln/eln/issues[ELN Issue].
 
@@ -68,4 +68,3 @@ touch the branch again.
 *If you decide that you no longer need the ELN branch  Do not retire the branch.
 You must tell the ELN SIG.* The ELN SIG will need to change configurations as
 well as retire the branch properly.
-

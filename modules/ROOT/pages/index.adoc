@@ -90,7 +90,7 @@ Who benefits from the ELN project:
 * Fedora Community
 ** The feedback pipelines build for the project will allow downstream developers
    to open up their work and bring it closer to Fedora.
-** 
+**
 ** The tooling developed for this project will allow development of the changes
    in Fedora Infrastructure without blocking the regular Fedora packaging and
    release process.

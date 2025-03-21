@@ -16,5 +16,3 @@
 ** xref:compose.adoc[Compose]
 
 * xref:status.adoc[Status]
-
-

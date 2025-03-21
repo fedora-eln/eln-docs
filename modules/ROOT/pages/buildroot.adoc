@@ -57,7 +57,7 @@ koji edit-tag \
 | x86_64       | -                            | `-march=x86-64-v2`
 |==============================================================================================================
 
-The compiler flag tweaks can be found in /usr/lib/rpm/redhat/macros 
+The compiler flag tweaks can be found in /usr/lib/rpm/redhat/macros
 The above options are from redhat-rpm-config-200-1
 
 
@@ -81,5 +81,5 @@ mock -r fedora-eln-x86_64 ...
 
 [NOTE]
 ====
-If the official `mock` configuration is not yet available, an unsupported configuration file can be downloaded link:{attachmentsdir}/fedora-eln-x86_64.cfg[here]. See link:https://github.com/rpm-software-management/mock/pull/649[mock#649] 
+If the official `mock` configuration is not yet available, an unsupported configuration file can be downloaded link:{attachmentsdir}/fedora-eln-x86_64.cfg[here]. See link:https://github.com/rpm-software-management/mock/pull/649[mock#649]
 ====
