@@ -22,10 +22,10 @@ The only difference is that any Fedora packager can add packages
 to ELN Extras, while only a handful of people can add packages
 to ELN.
 
-You add binary packages by creating and submitting workloads for 
-https://github.com/minimization/content-resolver#readme[Content Resolver]. 
-You submit them as pull requests at 
-https://github.com/minimization/content-resolver-input[content resolver input]. 
+You add binary packages by creating and submitting workloads for
+https://github.com/minimization/content-resolver#readme[Content Resolver].
+You submit them as pull requests at
+https://github.com/minimization/content-resolver-input[content resolver input].
 The workloads go in the config directory.
 
 Once the workloads have been merged, Content Resolver works through
@@ -38,13 +38,13 @@ list and adds it to the ELN Extras build list.
 
 === Workloads
 
-The full documentation on what goes in a workload yaml file can be found  as comments in the 
+The full documentation on what goes in a workload yaml file can be found  as comments in the
 https://github.com/minimization/content-resolver/blob/master/config_specs/workload.yaml[example workload yaml file].
 
 The create your initial workload yaml file, take that example yaml file, rename it,
 edit it, then submit it as a pull request.
 
-The example workload yaml has an example for everything.  But we don't need everything 
+The example workload yaml has an example for everything.  But we don't need everything
 for ELN Extras.
 
 ==== Workload Required Sections
@@ -86,10 +86,12 @@ for ELN Extras.
 ** We do not process package_placeholders in ELN Extras
 
 === ELN-only packages
+:link-epel-packages: https://docs.fedoraproject.org/en-US/epel/epel-faq/#rhel_8_has_binaries_in_the_release_but_is_missing_some_corresponding__devel_package._how_do_i_build_a_package_that_needs_that_missing__devel_package
 
-ELN-only packages can also be added to ELN Extras. One example is
-https://docs.fedoraproject.org/en-US/epel/epel-faq/#rhel_8_has_binaries_in_the_release_but_is_missing_some_corresponding__devel_package._how_do_i_build_a_package_that_needs_that_missing__devel_package[-epel packages]
+ELN-only packages can also be added to ELN Extras.
+One example is {link-epel-packages}[-epel packages]
 which are often used to provide subpackages that have been unshipped or otherwise excluded in RHEL. These packages can be added to ELN Extras, with some additional caveats:
+
 * similarly to regular -epel packages, the package needs to only produce the needed subpackages and nothing else
 * the package needs to be manually built for ELN from the "eln" branch in dist-git
 * the SRPM name has to be different from the corresponding Rawhide package (https://src.fedoraproject.org/rpms/libxcrypt-epel[example])
@@ -102,8 +104,8 @@ Can I add any or all Fedora packages to ELN-Extras?::
 
     You are attaching your name as the supporter of these packages.
     You will be submitting these workload packages as pull requests.
-    The ELN SIG will review the pull requests and ask questions if 
-    things look strange or incorrect.  So, yes, if you are willing 
+    The ELN SIG will review the pull requests and ask questions if
+    things look strange or incorrect.  So, yes, if you are willing
     to support a package, it can be any Fedora package not in ELN.
     And while we are not putting a firm limit on the number of packages
     you can add to ELN Extras, the SIG is reviewing them and will
