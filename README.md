@@ -38,7 +38,7 @@ It is published via Fedora Docs:
 6. **Images** to be used on any page.
 7. **Downloadable attachments** to be used on any page.
 8. **Menu definition.** Also defines the hierarchy of all the pages.
-9. **Pages with the actual content.** They can be also organised into subdirectories if desired.
+9. **Pages with the actual content.** They can be also organized into subdirectories if desired.
 
 ## Local preview
 

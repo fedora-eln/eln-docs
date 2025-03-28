@@ -1,0 +1,51 @@
+= A valid heading
+== Configuring Basic authentication
+== Configuring Basic HTTP authentication
+== GitLab Code Quality
+== The Infinispan project
+== Installing SmallRye to do xyz
+== Installing RESTEasy with Quarkus
+== A Jira instance
+== Knative is a component used in Quarkus
+== Eclipse Vert.x and Netty are upgraded in Quarkus
+== IBM Cloud
+== mTLS authentication
+//== The mutual TLS authentication scheme
+== Proof Key for Code Exchange
+== Kogito updates
+//== IBM Cloud is a valid product name
+//== Spotify, GraphQL, and Quiltflower are proper nouns so uppercase in headings is OK.
+== Redis is an in-memory data structure store that is used by several Red Hat products
+== Repackage the JAR file
+== Installing Podman Desktop
+== Installing Flathub
+== Installing Flatpak
+== Flatpak Builder
+== Software Development Kit
+== Software Development Kits
+== Application IDs
+== AppData files
+== The Electron base app
+== The Node.js SDK extension
+== Instructions for GTK
+== Instructions for Qt
+== Running Kind on Windows Subsystem for Linux (WSL)
+== Technology Preview
+== Using Podman Desktop
+== Using a proxy requiring custom Certificate Authorities
+== Using a proxy requiring custom Certificate Authorities (CA)
+== JBang
+== OpenRewrite something
+== About Fluentd and Flyway
+== About Graylog and Istio
+== Installing JBoss Log Manager
+== Troubleshooting with JBoss Logging
+== Uninstalling Logstash
+== About WebView
+== Problems with gRPC and xDS
+== Testing role-based access control in a heading
+== Testing RBAC in a heading
+== A Liquibase database
+== Using Mockito
+== Downloading the Eclipse Temurin distribution
+== Configuring OpenTelemetry

@@ -1,0 +1,561 @@
+A-MQ
+A-MQ Broker
+A-MQ Clients
+A-MQ Console
+A-MQ Interconnect
+ack
+ACK
+ack packet
+ActiveMQ
+ActiveMQ Artemis
+Admin Portal
+Administration portal
+Administrator Portal
+Analysis
+Ansible playbook
+Ansible rulebook
+Appliance Console
+Application stream
+application stream
+Applix
+ApplixWare
+Appstream
+appstream
+Asciidoc
+asciidoc
+AsciiDoctor
+asciidoctor
+assertj
+Assertj
+auto-link
+AutoLink
+AWS opt in Region
+basic auth
+Basic auth
+Basic Auth
+basic authentication
+Basic Authentication
+BC
+Bean
+Bios
+blue print
+Blue Store
+BluePrint
+bluestore
+BPM
+BPMS
+BRM
+BRMS
+BRMS engine
+btrfs
+burner
+Business Central editor
+c group
+capex
+capEx
+Capex
+Capsule server
+CD 1
+Cds
+CDS
+Ceph Ansible
+Ceph block device
+Ceph block devices
+Ceph file system
+Ceph filesystem
+Ceph monitor
+Ceph object gateway
+Ceph object gateways
+ceph-osd
+cephfs
+CFME
+CGroup
+cidr
+classic mode
+Classless Inter-domain Routing
+Classless Interdomain Routing
+CloudForms Management Engine
+Cluster Manager
+command prompt
+Compared to yaml, JSON has way more curly braces.
+Composite Content view
+composite content view
+Composite View
+composite view
+configmap
+configuration map
+Content view
+content view
+control key
+CP
+crush map
+crushmap
+csv
+ctrl
+customer portal
+cygmon
+CygMon
+CYGMON
+Data Grid console
+data warehouse
+Dataware House
+day-0
+Day-0
+day-1
+Day-1
+day-2
+Day-2
+Decision Server
+Denial of Service
+Denial-of-Service
+Dev Ops
+dev preview
+Dev-Ops
+Developer preview
+Development Preview
+devops
+Devops
+directory manager
+directory server
+disk druid
+Disk druid
+diskdruid
+DM
+DNF automatic
+dnf automatic
+dns
+dotNet
+DVD burner
+DWH
+EAP
+engine VM
+ETCD
+Etcd
+Exec Shield
+exif
+EXIF
+Extranet
+F.A.Q
+facter
+faq
+Faq
+fault tolerant
+fault-tolerance
+fedora project
+File Store
+filestore
+Firewalld
+firewallD
+FirewallD
+Firewire
+firewire
+FlatHub
+FlatPak
+fortran
+fqdn
+Fqdn
+Fuse Ignite
+gb
+Gb
+gbps
+GBPS
+GDBTK
+gid
+Gid
+gimp
+Gimp
+GIT
+gnome
+Gnome
+gnu
+Gnu
+gpl
+Gpl
+Graalvm
+graalVM
+green boots
+Greenboot
+GRPC
+Grub
+Gtk
+gtk
+GUI editor
+hot rod
+HotRod
+hotrod
+HP Proliant
+HTTP interface
+hyper-threading
+hyperthreading
+Hyperviser
+HyperVisor
+i-fix
+i-Fix
+ia64
+IA64
+IBM z Systems
+ifix
+iFix
+Ignite
+ignition config
+IM
+Image Builder
+Image builder
+Infiniband
+INSTALL_DIR
+installDir
+Intel Tolapai
+Iops
+IOPs
+Ip
+IPSec
+ipv4
+IPV4
+Ipv4
+ipv6
+IPV6
+Ipv6
+iSeries
+iso
+Istio Service Mesh
+Itanium2
+jar file
+javadoc
+jbang
+Jbang
+JBoss
+JBoss AMQ
+JBoss BPMS
+JBoss BRMS
+JBoss Broker
+JBoss Clients
+JBoss Console
+JBoss Data Grid
+JBoss Enterprise Application Platform
+JBoss Interconnect
+JBoss.org
+JDG
+jetbrains
+Jetbrains
+Junit
+junit
+jvm
+Jvm
+k8s
+kbase
+Kernel
+kernel-based virtual machine
+kernelspace
+key store
+kickstart
+Kie
+kie API
+Kie Server
+kjar
+kJAR
+knowledge API
+knowledge base
+knowledge session
+knowledgebase
+ksession
+Kubelet
+kubernetes
+kvm
+lan
+Lan
+Librados
+LIBRADOS
+Librbd
+LIBRBD
+Lightweight Directory Access Protocol over Secure Socket Layer
+linux
+LINUX
+live-backup group
+Local Zone
+local zone
+Lun
+lun
+LZ
+m-TLS
+master CA
+master server
+micro-profile
+Microprofile
+MicroSoft
+Microsoft Azure Portal
+Microsoft Windows Server
+MoM
+Mom
+mom
+Mongo DB
+Mongo-db
+mongoDB
+Mongodb
+MS
+ms-dos
+Ms-Dos
+msdos
+MSDOS
+MSFT
+MTLS
+mutual tls
+Mutual tls
+Mutual TLS
+mySQL
+MYSQL
+native interface
+network interface card
+node.js
+node.JS
+Node.JS
+nodejs
+Nodejs
+O.K.D.
+Object Storage Device
+objectclass
+Objective-C
+OCM
+OCP
+OD
+ODF
+ok
+OK button
+okay
+okd
+On-Demand Marketplace
+OO
+Open InfiniBand
+Open Rewrite
+openid connect
+Openid Connect
+openrewrite
+Openrewrite
+OpenShift Cluster Manager
+OpenShift Kubernetes Distribution
+Openshift online
+OpenShift Origin
+OpenStack Platform
+Operating Environment
+Operating System
+Operator hub
+Operator Hub
+operatorhub
+Operatorhub
+opEx
+Opex
+OPEX
+ORAN
+Org Admin
+org admin
+Organization administrator
+OS
+OSD daemon
+Overcloud
+P-PC
+Planner
+Playbook
+podman
+Podman desktop
+Pop-up
+popup
+posix
+Posix
+Postscript
+Powershell
+powershell
+PPC64
+ppp
+Ppp
+prom
+Prom
+proof key for code exchange
+proof of concepts
+Properties editor
+pSeries
+puppet
+puppet forge
+q & a
+Q & A
+q&a
+Q&A
+qcow2
+Qcow2
+Qdmanage
+QDMANAGE
+Qdstat
+QDSTAT
+Qeth
+QETH
+ram
+Ram
+RAM-disk
+ramdisk
+RAMdisk
+RAW
+Red Boot
+Red Hat Broker
+Red Hat Console
+Red Hat Interconnect
+Red Hat JBoss Data Grid
+Red Hat JBoss EAP
+Red Hat Network Satellite server
+Red Hat Proxy
+Red Hat satellite
+Red Hat Satellite Capsule server
+Red Hat Satellite server
+Red Hat Virtualization Hypervisor
+Redboot
+redis
+Resource Planner
+resteasy
+Resteasy
+RESTEASY
+RH-OSP
+RHCP
+RHDS
+RHEL host
+RHEL-H
+RHOS
+RHV
+RHV Host
+RHV Manager
+RHV-H
+RHV-M
+RHVM
+Role Based Access Control
+role based access control
+Role-Based Access Control
+rolling application stream
+rolling application streams
+rolling stream
+rolling streams
+rom
+Rom
+rpm
+S-E Linux
+s-record
+s-Record
+S-Record
+samba
+SAMBA
+Satellite server
+SE Linux
+SE-Linux
+self-hosted engine virtual machine
+selinux
+Shadow Man
+Shadow passwords
+Shadow utilities
+ShadowMan
+Smallrye
+smart NIC
+Smart State
+smart state
+Smart state
+Smart-NIC
+Smartstate
+socks
+SoftIRQ
+software collection
+Software collection
+Source Navigator
+source to image
+Spec
+Spice
+spice
+Spring boot
+SR IOV
+SREC
+ssh
+Ssh
+SSL
+SSL handshake
+standard environment
+standard Manager
+Star Office
+Staroffice
+StartTLS
+startTLS
+StartX
+STI
+SU
+sub version
+Subscription manifest
+Sys V
+system d
+system D
+System V
+SystemD
+Technology preview
+technology preview
+The AMQ Broker
+The Operator Lifecycle Manager
+ttl
+uid
+UltraSparc
+ULTRASPARC
+unix
+Unix
+UNIX-like
+uri
+url
+urn
+Use the .NET Core framework
+Use the .Net Core framework
+Use the .Net framework
+User Portal
+var
+VCPU
+vcpu
+VI
+vim
+VIM
+Virtual Console
+Virtual Desktop Server Management
+Virtual Machine Portal
+Virtual Network Interface Card
+virtual-console
+VisualStudio Code
+VisualStudioCode
+vlan
+vLAN
+VM portal
+vm portal
+vnic
+VNIC
+vnuma
+VNUMA
+vpn
+VS Code
+VSCode
+VT
+VT-i
+wan
+wca
+web-UI
+webadmin
+webadmin portal
+Webauthn
+webAuthn
+WebAuthN
+Websocket
+websocket
+webUI
+wi-fi
+WiFi
+Wifi
+Window-Maker
+WindowMaker
+x-plat cli
+X-PLAT CLI
+x-plat-cli
+X-PLAT-CLI
+Xemacs
+Xp
+xp
+xplat cli
+XPLAT CLI
+xplat-cli
+XPLAT-CLI
+Xterm
+Yaml is not a markup language.

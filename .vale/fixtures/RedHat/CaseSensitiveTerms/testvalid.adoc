@@ -1,0 +1,338 @@
+.NET
+// suppress inspection "IncorrectFormatting" for whole file
+/var
+ACK flag
+Administration Portal
+Amazon Web Services
+AMQ
+AMQ Broker
+AMQ Clients
+AMQ Console
+AMQ Interconnect
+Ansible Playbook
+Apache Subversion
+Appliance console
+Application Stream
+Applixware
+AppStream repository
+AsciiDoc
+Asciidoctor
+AssertJ
+autolink
+Azure Red Hat OpenShift
+Basic authentication
+Basic HTTP authentication
+BIND
+bind
+BIOS
+blueprint
+BlueStore
+Btrfs
+built-in messaging
+Business Central
+Business Resource Planner
+CapEx
+capsule
+Capsule Server
+CD #1
+CDs
+Central
+Ceph Block Device
+Ceph File System
+Ceph Monitor
+Ceph Object Gateway
+ceph-ansible
+CephFS
+cgroup
+CIDR
+Command Prompt
+Composite Content View
+ConfigMap
+Content View
+CRUSH map
+CSV
+Ctrl
+Customer Portal
+Cygmon
+Data Grid
+Data Grid Console
+Data Warehouse
+Day 0
+Day 1
+Day 2
+Dedicated
+denial of service
+denial-of-service
+Developer Preview
+DevOps
+Directory Manager
+Directory Server
+Disk Druid
+DM Multipath
+DM-Multipath
+DNF Automatic
+DNS
+DVD writer
+Editor
+etcd
+Exec-Shield
+Exif
+extranet
+Facter
+FAQ
+fault tolerance
+fault-tolerant
+Fedora™ Project
+File extension example.yaml must pass.
+FileStore
+firewalld
+FireWire
+Fortran
+FQDN
+Fuse Online
+Fuse Online|Red Hat Fuse Online|Syndesis
+FUSE_HOME
+GB
+Gbps
+GID
+GIMP
+Git
+GNOME
+GNOME Classic
+GNU
+GPL
+GraalVM
+greenboot
+gRPC
+GRUB
+GTK+
+GUI
+guided editor
+Hibernate ORM
+Hot Rod
+HP ProLiant
+Hyper-Threading
+hypervisor
+IBM eServer System p
+IBM S/390
+IBM Z
+IdM CA renewal server
+IdM server and replicas
+Ignition config
+image builder
+inference engine
+InfiniBand
+Insight
+Insights image builder
+Intel Virtualization Technology
+Intel(R) EP80579 Integrated Processor
+Intelligent Process Server
+IOPS
+IP
+IPsec
+IPv4
+IPv6
+ISeries
+ISO
+ISO image
+Istio service mesh
+Itanium
+Itanium 2
+JAR file
+Javadoc
+JBang
+JBoss Community
+JBoss EAP
+JBoss EAP built-in messaging
+JBoss EAP messaging
+JetBrains
+JUnit
+JVM
+kernel
+kernel space
+Kernel-based Virtual Machine
+Kernel Module Management
+keystore
+Kickstart
+KIE
+KIE API
+KIE base
+KIE session
+KJAR
+Knowledgebase
+kubelet
+Kubelet Stats Receiver
+Kubernetes
+KVM
+LAN
+LDAPS
+librados
+librbd
+Linux
+Liquibase
+LUN
+management CLI
+management console
+Manager virtual machine
+Mandrel
+master-slave group
+MicroProfile
+Microsoft
+Microsoft Azure Cross-Platform Command-Line Interface
+Microsoft Azure On-Demand Marketplace
+Microsoft Azure portal
+Mockito
+MOM
+MongoDB
+ms
+MS-DOS
+mTLS
+mutual TLS
+MySQL
+network interface controller (NIC)
+Node.js
+O-RAN
+object class
+objectClass
+Objective C
+OK
+OKD
+OpenID Connect
+OpenRewrite
+OpenTelemetry
+operating environment
+operating system
+Operator Lifecycle Manager
+OperatorHub
+OpEx
+Organization Administrator
+OSD
+OTel
+overcloud
+Podman
+pop-up
+POSIX
+PostScript
+PowerPC
+PowerShell
+PPP
+PROM
+Proof Key for Code Exchange
+proof of concept
+Properties View
+Puppet
+Puppet Forge
+Q and A
+QCOW2
+qdmanage
+qdstat
+qeth
+RAM
+RAM disk
+raw
+Realtime Decision Server
+Red Hat AMQ
+Red Hat build of OpenJDK
+Red Hat CloudForms
+Red Hat CloudForms Appliance
+Red Hat CloudForms|Red Hat CloudForms Appliance
+Red Hat Customer Portal
+Red Hat Data Grid
+Red Hat Directory Server
+Red Hat Enterprise Linux host
+Red Hat Fuse Online
+Red Hat JBoss BPM Suite
+Red Hat JBoss BRMS
+Red Hat JBoss Enterprise Application Platform
+Red Hat Network Proxy Server
+Red Hat Network Satellite Server
+Red Hat OpenShift Cluster Manager
+Red Hat OpenShift Container Platform
+Red Hat OpenShift Data Foundation
+Red Hat OpenShift Dedicated
+Red Hat OpenShift Online
+Red Hat OpenStack Platform
+Red Hat Satellite
+Red Hat Satellite Capsule Server
+Red Hat Satellite Server
+Red Hat Virtualization
+Red Hat Virtualization Host
+Red Hat Virtualization Manager
+RedBoot
+Redis
+RESTEasy
+role-based access control
+Rolling Application Stream
+Rolling Application Streams
+Rolling Stream
+Rolling Streams
+ROM
+RPM
+S-record
+Samba
+Satellite Server
+SELinux
+shadow passwords
+shadow utilities
+Shadowman
+SmartNIC
+SmartState analysis
+SOCKS
+softirq
+Software Collection
+Source-Navigator^TM^
+Source-to-Image (S2I)
+spec
+SPICE
+Spring Boot
+SR-IOV
+SSH
+SSL/TLS
+standalone Manager
+StarOffice
+STARTTLS
+startx
+su
+Subscription Manifest
+Syndesis
+systemd
+SysV
+T-BC
+Technology Preview
+Temurin
+The .NET framework
+TLS handshake
+TTL
+UID
+UltraSPARC
+undercloud
+UNIX
+URI
+URL
+URN
+VAR
+vCPU
+VDSM
+vi
+Vim
+virtual console
+Visual Studio Code
+VLAN
+VM Portal
+vNIC
+vNUMA node
+VPN
+VT-d
+WAN
+WCA
+Web services
+web UI
+WebAuthn
+WebSocket
+Window Maker
+Windows
+Windows Server
+XEmacs
+XP
+xterm
+YAML

@@ -1,7 +1,7 @@
 = ELN Branches
 
 Whenever possible, ELN work should be done in the Fedora rawhide branches.
-But sometimes ELN work needs to be done in an Fedora eln branch.  Here are
+But sometimes ELN work needs to be done in an Fedora eln branch. Here are
 the steps for making that happen.
 
 == Step 1: Request Permission
@@ -62,7 +62,7 @@ as a co-maintaine through https://src.fedoraproject.org/rpms/<package>/adduser
 == Step 3: Maintain Branch
 
 After your branch has been created, remember that the ELN branch is your
-responsibility.  Do not create the branch, build it once, and then never
+responsibility. Do not create the branch, build it once, and then never
 touch the branch again.
 
 *If you decide that you no longer need the ELN branch  Do not retire the branch.

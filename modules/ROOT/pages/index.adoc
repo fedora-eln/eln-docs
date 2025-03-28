@@ -78,7 +78,7 @@ This includes:
 Who benefits from the ELN project:
 
 * Fedora Infrastructure
-** As we are going to try and test new infrastructure for composes.
+** As we are going to try to test new infrastructure for composes.
 
 * Fedora Minimization
 ** As we are going to modify the compose content according to minimization goals.
