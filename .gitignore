@@ -2,3 +2,4 @@ build
 cache
 public
 *~
+.vale/styles/RedHat/

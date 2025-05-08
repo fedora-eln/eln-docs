@@ -1,7 +1,7 @@
 = ELN Macros
 
 The ELN buildroot defines the %\{rhel\} macro as the next major version of RHEL
-(currently, 11), and does not define the %\{fedora\} macro.  For almost all cases,
+(currently, 11), and does not define the %\{fedora\} macro. For almost all cases,
 this is sufficient for differentiating build behavior between Fedora and ELN.
 
 == Request Permission

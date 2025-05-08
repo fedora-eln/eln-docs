@@ -21,7 +21,7 @@ image::ROOT:fedora-eln-centos-stream-rhel.png[]
 What are the differences between Rawhide and ELN?::
 
     For the majority of packages, there is little or no difference between Rawhide and
-    ELN packages.  They are the same versions, usually built on the same libraries.  But
+    ELN packages. They are the same versions, usually built on the same libraries. But
     there are some https://docs.fedoraproject.org/en-US/eln/buildroot/[buildroot differences]
     in https://docs.fedoraproject.org/en-US/eln/buildroot/#_compiler_flags_and_other_tweaks[compiler flags]
     and https://docs.fedoraproject.org/en-US/eln/buildroot/#_distribution_related_macro_definitions[global macros]
@@ -49,10 +49,10 @@ What are the differences between the Rawhide and ELN kernel?::
     a much larger range of hardware and features.  A notable difference is that the ELN kernel
     does not support btrfs at all, making it difficult to install and use on systems that were
     installed as Fedora Workstation edition, or in Fedora 35 or newer Cloud images which use btrfs
-    by default.  There are also differences in baseline supported hardware, meaning the ELN kernel
+    by default. There are also differences in baseline supported hardware, meaning the ELN kernel
     may not run on older systems where the Rawhide kernel runs just fine.
 
 When should I use the rpm macro %\{eln}?::
 
-    Never.  In nearly all cases, you actually want to use the %\{rhel} macro.
+    Never. In nearly all cases, you actually want to use the %\{rhel} macro.
     See xref:eln-macros.adoc[ELN Macros] for more information.
