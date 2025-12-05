@@ -7,17 +7,76 @@ WARNING: Fedora ELN is a development environment. It is not intended for product
 
 The latest production compose of Fedora ELN packages is available at https://download.fedoraproject.org/pub/eln/1/
 
+Server installation media can be found here:
+https://download.fedoraproject.org/pub/eln/1/BaseOS/x86_64/iso/[x86_64]
+https://download.fedoraproject.org/pub/eln/1/BaseOS/aarch64/iso/[aarch64]
+https://download.fedoraproject.org/pub/eln/1/BaseOS/ppc64le/iso/[ppc64le]
+https://download.fedoraproject.org/pub/eln/1/BaseOS/s390x/iso/[s390x]
+
+QEMU qcow2 images can be found here:
+https://download.fedoraproject.org/pub/eln/1/BaseOS/x86_64/images/[x86_64]
+https://download.fedoraproject.org/pub/eln/1/BaseOS/aarch64/images/[aarch64]
+https://download.fedoraproject.org/pub/eln/1/BaseOS/ppc64le/images/[ppc64le]
+https://download.fedoraproject.org/pub/eln/1/BaseOS/s390x/images/[s390x]
+
 See also xref:compose.adoc[Compose].
 
 == Container image
 
-As a part of the compose, we build also container images which are then published to Quay.io image registry under the name ``quay.io/fedora/eln```.
+As a part of the compose, we build container images which are then published to Quay.io image registry under the name ``quay.io/fedora/eln``.
 
-To run Fedora ELN container use:
+To create and use Fedora ELN container, run:
 
 ```
-$ podman run -it quay.io/fedora/eln
+podman run -it quay.io/fedora/eln
 ```
+
+== Toolbx image
+
+As a part of the compose, we build https://containertoolbx.org/[Toolbx] images which are then published to Quay.io image registry under the name ``quay.io/fedora/eln-toolbox``.
+
+To run Fedora ELN with Toolbx, first create the container:
+
+```
+toolbox create --image quay.io/fedora/eln-toolbox eln-toolbox
+```
+
+Then run:
+
+```
+toolbox enter eln-toolbox
+```
+
+== Cloud images
+
+As a part of the compose, we build Cloud images for AWS, Azure, and GCP.  These are uploaded to each cloud provider on a regular basis as a community offering.
+
+To use, search for **ELN** among community images when creating a new instance.
+
+== WSL images
+
+As a part of the compose, we build WSL images for both Windows architectures:
+https://download.fedoraproject.org/pub/eln/1/BaseOS/x86_64/images/[x64]
+https://download.fedoraproject.org/pub/eln/1/BaseOS/aarch64/images/[arm64]
+
+To install and use the first time, download the .wsl image, double-click the downloaded file, and follow the prompts in the terminal.
+
+For subsequent usage, launch the **Fedora-ELN** entry in the Start Menu, or run in the Command Prompt or PowerShell:
+
+```
+wsl -d Fedora-ELN
+```
+
+For more details, see https://docs.fedoraproject.org/en-US/cloud/wsl/[the Fedora on WSL documentation].
+
+== Live images
+
+As a part of the compose, we build GNOME and KDE Live images similar to https://sigs.centos.org/altimages/live-images/[those produced by the CentOS Alternative Images SIG].
+These images contain content from the ELN Extras repository which will not necessarily be in the next RHEL version but may end up in EPEL.
+
+Live media can be found here:
+https://download.fedoraproject.org/pub/eln/1/Extras/x86_64/iso/[x86_64]
+https://download.fedoraproject.org/pub/eln/1/Extras/aarch64/iso/[aarch64]
 
 == Mock environment
 
