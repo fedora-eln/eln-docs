@@ -49,12 +49,11 @@ koji edit-tag \
 .Compiler Flags
 [options="header"]
 |==============================================================================================================
-| Arch         | Rawhide                      | ELN
-| aarch64      | -                            | -
-| i686         | -                            | -
-| ppc64le      | -                            | -
-| s390x        | `-march=zEC12 -mtune=z13`    | `-march=z14 -mtune=z15`
-| x86_64       | -                            | `-march=x86-64-v2`
+| Arch         | Rawhide                        | ELN
+| aarch64      | -                              | -
+| ppc64le      | `-mcpu=power8 -mtune=power8`   | `-mcpu=power9 -mtune=power10`
+| s390x        | `-march=z13 -mtune=z14`        | `-march=z14 -mtune=z15`
+| x86_64       | `-march=x86-64 -mtune=generic` | `-march=x86-64-v3 -mtune=generic`
 |==============================================================================================================
 
 The compiler flag tweaks can be found in /usr/lib/rpm/redhat/macros
