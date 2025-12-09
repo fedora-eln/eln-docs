@@ -19,6 +19,8 @@ and why use of the %\{fedora\}, %\{rhel\}, and/or %\{centos\} macros does not su
 |===
 | Package | Justification
 
+| anaconda | Package is partly provided in CS/RHEL and partly in EPEL, but ELN and ELN Extras are not that separated
+| fedora-eln-backgrounds | ELN-specific package, not imported into CS/RHEL
 | fedora-logos | Fedora-specific package, not imported into CS/RHEL
 | fedora-release | Fedora-specific package, not imported into CS/RHEL
 | fedora-repos | Fedora-specific package, not imported into CS/RHEL
@@ -28,10 +30,15 @@ and why use of the %\{fedora\}, %\{rhel\}, and/or %\{centos\} macros does not su
 | kernel | Secure boot signing differs between CS/RHEL and Fedora/ELN
 | libreoffice | RHEL-specific branding, does not make sense for Fedora/ELN
 | libreport | ELN bugs are to be reported to Fedora infrastructure, not CS/RHEL
+| libxcrypt | Package is partly provided in CS/RHEL and partly in EPEL, but ELN and ELN Extras are not that separated
 | lorax-templates-rhel | Downstream repo used as Source URL
 | lynx | RHEL-specific branding, does not exist in Fedora/ELN
 | mock-core-configs | ELN has separate mock configs from CS and RHEL
+| ncurses | Package is partly provided in CS/RHEL and partly in EPEL, but ELN and ELN Extras are not that separated
 | openssl | FIPS certification is for RHEL only, not for CS/ELN/Fedora
+| python-build | Package will be partly provided in CS/RHEL and partly in EPEL, but ELN and ELN Extras are not that separated
+| python-novaclient | Package is built differently for OpenStack than for EPEL, and ELN Extras is mimicking the latter
+| python-oslo-utils | Package is built differently for OpenStack than for EPEL, and ELN Extras is mimicking the latter
 | python-rpm-macros | CS/RHEL support multiple Python versions, ELN only supports latest (https://github.com/fedora-eln/eln/issues/73[#73])
 | python-requests | Package is partly provided in CS/RHEL and partly in EPEL, but ELN and ELN Extras are not that separated
 | python-urllib3 | Package is partly provided in CS/RHEL and partly in EPEL, but ELN and ELN Extras are not that separated
