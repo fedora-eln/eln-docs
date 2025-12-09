@@ -22,7 +22,7 @@ The official SIG membership list is maintained as part of our Github Organizatio
 * Track the status of package builds and composes. Work with Fedora package
   maintainers to resolve the issues.
 
-* Keep track of the eln-conditionals in RPM spec files.
+* Keep track of the xref:eln-macros.adoc[RHEL and ELN conditionals] in RPM spec files.
 
 * Investigate compose failures
 
@@ -34,17 +34,15 @@ The official SIG membership list is maintained as part of our Github Organizatio
 
 * Matrix Room: https://matrix.to/#/#eln:fedoraproject.org[#eln:fedoraproject.org]
 
-* IRC was used in the past but it is not used anymore, listing here for reference: https://web.libera.chat/?channels=#fedora-eln[#fedora-eln on Libera]
-
 === Issue tracker
 
 * https://github.com/fedora-eln/eln/issues
 
 === Meetings
 
-Meetings of the ELN Special Interest Group are held on Fridays at noon, US Eastern Time. It is listed on the https://calendar.fedoraproject.org/SIGs/[SIGs calendar].
+Meetings of the ELN Special Interest Group are held on Thursdays at 3 PM, US Eastern Time. It is listed on the https://calendar.fedoraproject.org/SIGs/[SIGs calendar].
 
-The meeting agenda will generally be prepared in advance by opening tickets on the https://github.com/fedora-eln/eln/issues[issue tracker] and tagging them with the `meeting` label.
+The meeting agenda will generally be prepared in advance by opening tickets on the https://github.com/fedora-eln/eln/issues[issue tracker] and tagging them with the `Meeting` label.
 
 == How to Join
 
