@@ -60,8 +60,10 @@ When should I use the rpm macro %\{eln}?::
 There is no browser preinstalled in ELN, what should I do?::
 
     RHEL 11 will only ship and preinstall the Firefox RHEL Flatpak and not its RPM version. Because 
-    ELN follows closely what RHEL 11 will be, it doesn't ship the RPM version of Firefox and also
-    no Flatpaks are produced for ELN. To get your installed systems as close as possible to RHEL 11,
+    ELN follows closely what RHEL 11 will be, it does not include a RPM version of Firefox by default,
+    and also no Flatpaks are produced for ELN. To get your installed systems as close as possible to RHEL 11,
     we suggest you to install Firefox Fedora Flatpak by following the
     https://docs.fedoraproject.org/en-US/flatpak/installation/[installation guide for Fedora Flatpaks]
     or Firefox RHEL Flatpak by following the https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/administering_the_system_using_the_gnome_desktop_environment/assembly_installing-applications-using-flatpak_administering-the-system-using-the-gnome-desktop-environment[installation guide for RHEL Flatpaks].
+    Alternatively, there is a `firefox` RPM in the ELN Extras repository.  KDE users may also wish to
+    install `angelfish`, `falkon`, and/or `konqueror` RPMs, except on s390x where they are not available.
