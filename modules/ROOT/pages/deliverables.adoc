@@ -71,7 +71,7 @@ For more details, see https://docs.fedoraproject.org/en-US/cloud/wsl/[the Fedora
 
 == Live images
 
-As a part of the compose, we build GNOME and KDE Live images similar to https://sigs.centos.org/altimages/live-images/[those produced by the CentOS Alternative Images SIG].
+As a part of the compose, we build GNOME, KDE, and COSMIC Live images similar to https://sigs.centos.org/altimages/live-images/[those produced by the CentOS Alternative Images SIG].
 These images contain content from the ELN Extras repository which will not necessarily be in the next RHEL version but may end up in EPEL.
 
 Live media can be found here:
