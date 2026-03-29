@@ -10,7 +10,7 @@ and quicker to get a compose of EPEL N+1 out the door if the initial
 packages have already been built for ELN-Extras.
 
 NOTE: **You** are responsible when your package fails to build on ELN
-Extras.  Remember to check your packages on
+Extras. Remember to check your packages on
 https://sgallagh.fedorapeople.org/dbs_status.html[the
 ELN Status Page].  ELN Extras packages get rebuilt much more frequently
 than in EPEL.
@@ -44,7 +44,7 @@ https://github.com/minimization/content-resolver/blob/master/config_specs/worklo
 The create your initial workload yaml file, take that example yaml file, rename it,
 edit it, then submit it as a pull request.
 
-The example workload yaml has an example for everything.  But we don't need everything
+The example workload yaml has an example for everything. But we don't need everything
 for ELN Extras.
 
 ==== Workload Required Sections
@@ -105,7 +105,7 @@ Can I add any or all Fedora packages to ELN-Extras?::
     You are attaching your name as the supporter of these packages.
     You will be submitting these workload packages as pull requests.
     The ELN SIG will review the pull requests and ask questions if
-    things look strange or incorrect.  So, yes, if you are willing
+    things look strange or incorrect. So, yes, if you are willing
     to support a package, it can be any Fedora package not in ELN.
     And while we are not putting a firm limit on the number of packages
     you can add to ELN Extras, the SIG is reviewing them and will
@@ -113,7 +113,7 @@ Can I add any or all Fedora packages to ELN-Extras?::
 
 If someone has already added a package to their workload, can I have the same package in mine?::
 
-Yes.  Content Resolver is setup to deal with a package in more than
-one workload, or a dependency in more than one workload.  It will show what
-workloads list, or require what packages.  It even takes a guess on who
+Yes. Content Resolver is setup to deal with a package in more than
+one workload, or a dependency in more than one workload. It will show what
+workloads list, or require what packages. It even takes a guess on who
 should be the owner of the package.
