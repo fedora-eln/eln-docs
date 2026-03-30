@@ -21,11 +21,14 @@ maintaining the eln branch.
 === You ARE the Fedora maintainer
 
 If you are a Fedora maintainer of the package needing a branch, then
-the next step if fairly simple.
+the next step is fairly simple.
 
 ....
 fedpkg request-branch eln --no-auto-module --repo <package>
 ....
+
+If there is an error about expired or invalid token, make sure to set up a token 
+with ACL "Create a new ticket".
 
 === You ARE NOT the Fedora maintainer
 
