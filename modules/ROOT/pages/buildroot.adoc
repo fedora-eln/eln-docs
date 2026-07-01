@@ -52,12 +52,12 @@ koji edit-tag \
 | Arch         | Rawhide                        | ELN
 | aarch64      | -                              | -
 | ppc64le      | `-mcpu=power8 -mtune=power8`   | `-mcpu=power9 -mtune=power10`
-| s390x        | `-march=z13 -mtune=z14`        | `-march=z14 -mtune=z15`
+| s390x        | `-march=z15 -mtune=z17`        | `-march=z15 -mtune=z17`
 | x86_64       | `-march=x86-64 -mtune=generic` | `-march=x86-64-v3 -mtune=generic`
 |==============================================================================================================
 
-The compiler flag tweaks can be found in /usr/lib/rpm/redhat/macros
-The above options are from redhat-rpm-config-200-1
+The compiler flag tweaks can be found in https://src.fedoraproject.org/rpms/redhat-rpm-config/blob/rawhide/f/macros[/usr/lib/rpm/redhat/macros].
+The above options are from https://src.fedoraproject.org/rpms/redhat-rpm-config/c/b7a088ac61e38cdbe1a0bde2103bfc7fa2a9e6df[redhat-rpm-config-344-5].
 
 
 [#building]
