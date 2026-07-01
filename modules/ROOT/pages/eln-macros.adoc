@@ -22,7 +22,6 @@ and why use of the %\{fedora\}, %\{rhel\}, and/or %\{centos\} macros does not su
 | anaconda | Package is partly provided in CS/RHEL and partly in EPEL, but ELN and ELN Extras are not that separated
 | fedora-eln-backgrounds | ELN-specific package, not imported into CS/RHEL
 | fedora-logos | Fedora-specific package, not imported into CS/RHEL
-| fedora-release | Fedora-specific package, not imported into CS/RHEL
 | fedora-repos | Fedora-specific package, not imported into CS/RHEL
 | freeipa | RHEL-specific branding, does not exist in Fedora/ELN
 | gpsd | Package is partly provided in CS/RHEL and partly in EPEL, but ELN and ELN Extras are not that separated
