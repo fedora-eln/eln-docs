@@ -15,9 +15,10 @@ https://tiny.distro.builders/view\--view-eln.html.
 The expanded package set including build dependencies can be found at
 https://tiny.distro.builders/view\--view-eln-and-buildroot.html.
 
-There is also an xref:status.adoc#_eln_builds[ELN Build Status page] showing
-which packages are currently failing to build for ELN, as well as those
-that have a discrepancy between Fedora Rawhide and ELN builds.
+There is also an
+https://elnbuildsync.fedoraproject.org/status.html[ELN Rebuild Status page]
+showing which packages are currently failing to build for ELN, as well as
+those that have a discrepancy between Fedora Rawhide and ELN builds.
 
 
 == Debugging ELN build failures

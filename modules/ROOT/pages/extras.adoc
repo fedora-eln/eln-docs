@@ -11,9 +11,9 @@ packages have already been built for ELN-Extras.
 
 NOTE: **You** are responsible when your package fails to build on ELN
 Extras.  Remember to check your packages on
-https://sgallagh.fedorapeople.org/dbs_status.html[the
-ELN Status Page].  ELN Extras packages get rebuilt much more frequently
-than in EPEL.
+https://elnbuildsync.fedoraproject.org/status.html[the
+ELN Rebuild Status Page].  ELN Extras packages get rebuilt much more
+frequently than in EPEL.
 
 == How to Add a Package to ELN Extras
 

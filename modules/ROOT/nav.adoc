@@ -15,4 +15,4 @@
 ** xref:branching.adoc[Events]
 ** xref:compose.adoc[Compose]
 
-* xref:status.adoc[Status]
+* https://elnbuildsync.fedoraproject.org/status.html[Rebuild Status]
