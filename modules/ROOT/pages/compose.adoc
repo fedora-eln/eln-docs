@@ -35,7 +35,7 @@ The first time you need to log in to an infrastructure compose host, you will
 need to set up your SSH configuration as described in
 https://docs.fedoraproject.org/en-US/infra/sysadmin_guide/sshaccess/#_ssh_configuration[Fedora Infrastructure Documentation].
 
-1. Log in to compose-eln01.iad2.fedoraproject.org
+1. Log in to compose-eln01.rdu3.fedoraproject.org
 2. Verify that no compose is already running with ``ps -ef|grep pungi-koji``
    or a similar command.
 3. Edit the file ``/etc/cron.d/eln``, copying the line containing
