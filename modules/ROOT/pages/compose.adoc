@@ -17,10 +17,10 @@ synced compose.
 == Compose configuration files ==
 
 The main Fedora ELN compose configuration is stored in the official
-https://pagure.io/pungi-fedora/ repository in the ``eln`` branch.
+https://forge.fedoraproject.org/releng/pungi-fedora[pungi-fedora] repository, in the ``eln`` branch.
 
 The Fedora ELN compose uses the ``comps-eln.xml`` file stored in the
-https://pagure.io/fedora-comps repository.
+https://forge.fedoraproject.org/releng/fedora-comps[fedora-comps] repository.
 
 
 == Generating the Fedora ELN compose ==
