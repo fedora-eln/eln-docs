@@ -23,9 +23,9 @@ to ELN Extras, while only a handful of people can add packages
 to ELN.
 
 You add binary packages by creating and submitting workloads for
-https://github.com/minimization/content-resolver#readme[Content Resolver].
+https://github.com/fedora-eln/content-resolver#readme[Content Resolver].
 You submit them as pull requests at
-https://github.com/minimization/content-resolver-input[content resolver input].
+https://github.com/fedora-eln/content-resolver-input[content resolver input].
 The workloads go in the config directory.
 
 Once the workloads have been merged, Content Resolver works through
@@ -39,7 +39,7 @@ list and adds it to the ELN Extras build list.
 === Workloads
 
 The full documentation on what goes in a workload yaml file can be found  as comments in the
-https://github.com/minimization/content-resolver/blob/master/config_specs/workload.yaml[example workload yaml file].
+https://github.com/fedora-eln/content-resolver/blob/master/config_specs/workload.yaml[example workload yaml file].
 
 The create your initial workload yaml file, take that example yaml file, rename it,
 edit it, then submit it as a pull request.
@@ -96,7 +96,7 @@ which are often used to provide subpackages that have been unshipped or otherwis
 * the package needs to be manually built for ELN from the "eln" branch in dist-git
 * the SRPM name has to be different from the corresponding Rawhide package (https://src.fedoraproject.org/rpms/libxcrypt-epel[example])
 * the SRPM name has to be added to the ``configuration.control.exclude`` list in https://github.com/fedora-eln/elnbuildsync-config/blob/production/elnbuildsync_dynamic.yaml[ELNBuildSync dynamic configuration] to avoid accidental rebuilds
-* the needed subpackages need to be added to Content Resolver for ELN Extras as usual (https://github.com/minimization/content-resolver-input/pull/1124[example])
+* the needed subpackages need to be added to Content Resolver for ELN Extras as usual (https://github.com/fedora-eln/content-resolver-input/pull/1124[example])
 
 == ELN Extras Frequently Asked Questions
 
