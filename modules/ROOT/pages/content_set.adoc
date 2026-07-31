@@ -1,0 +1,72 @@
+= ELN Content Set
+
+== How to Add a Package to ELN
+
+=== Content Resolver Input
+
+RHEL maintainers should add a package to ELN when it intended to be
+added to the next major version of RHEL.  (Often, it is also being
+added to the current stable version of RHEL at the same time.)
+
+You add binary packages by creating and submitting workloads for
+https://github.com/fedora-eln/content-resolver#readme[Content Resolver].
+You submit them as pull requests at
+https://github.com/fedora-eln/content-resolver-input[Content Resolver input].
+The workloads go in the config directory.
+
+[NOTE]
+====
+Only packages which are intended to be installed directly by the user should
+be added explicitly; both build and runtime dependencies will be computed
+and added automatically.
+====
+
+Once the workloads have been merged, Content Resolver works through
+all the dependencies of the workload, and displays it in its
+link:++https://tiny.distro.builders/view--view-eln.html++[ELN view].
+
+After Content Resolver has worked it work, the ELN build automation takes that
+list and adds it to the ELN build list, and drops any packages which are no longer
+on that list.
+
+=== Product Listings
+
+The next step is to add the binary packages to the appropriate repositories,
+so that they "ship" in the ELN compose.  Most explicitly added packages will
+end up in one of the two following repositories:
+
+- BaseOS: core operating system functionality
+- AppStream: applications, runtime languages, databases, desktop components, container tools, etc.
+
+The content of those repositories are defined in
+https://forge.fedoraproject.org/releng/pungi-fedora/src/branch/eln/shared/additional_and_filter_packages.conf[pungi-fedora].
+
+If the package has a -devel subpackage, or brings in build dependencies which
+are not needed at runtime, that would be useful for building other packages
+(such as in EPEL), then they should be added to the following repository:
+
+- CRB: development packages and tools
+
+The content of CRB is defined in ELN's `crb` group of
+https://forge.fedoraproject.org/releng/fedora-comps/src/branch/main/comps-eln.xml.in.in[fedora-comps].
+
+The following RHEL Add-Ons have corresponding repositories in ELN for their specific content:
+
+- HighAvailability
+- NFV
+- RT
+- SAP
+- SAPHANA
+
+The content of those repositories is defined in their respective groups of
+https://forge.fedoraproject.org/releng/fedora-comps/src/branch/main/comps-eln.xml.in.in[fedora-comps].
+
+== How to Mark a Package as Unwanted
+
+When a package previously in RHEL becomes obsolete, or is unsupportable in RHEL
+but may be suspectible to becoming a dependency of a RHEL package, then that package
+can be marked as unwanted.  This is done by adding an unwanted package config
+to https://github.com/fedora-eln/content-resolver-input[Content Resolver input].
+
+Any unwanted package on which other packages in ELN still depend is listed in the ELN view's
+https://tiny.distro.builders/view-unwanted--view-eln.html[Unwanted Packages list].
