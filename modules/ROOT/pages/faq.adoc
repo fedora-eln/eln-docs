@@ -22,9 +22,9 @@ What are the differences between Rawhide and ELN?::
 
     For the majority of packages, there is little or no difference between Rawhide and
     ELN packages.  They are the same versions, usually built on the same libraries.  But
-    there are some https://docs.fedoraproject.org/en-US/eln/buildroot/[buildroot differences]
-    in https://docs.fedoraproject.org/en-US/eln/buildroot/#_compiler_flags_and_other_tweaks[compiler flags]
-    and https://docs.fedoraproject.org/en-US/eln/buildroot/#_distribution_related_macro_definitions[global macros]
+    there are some xref:buildroot.adoc[buildroot differences]
+    in xref:buildroot.adoc#_compiler_flags_and_other_tweaks[compiler flags]
+    and xref:buildroot.adoc#_distribution_related_macro_definitions[global macros]
     that can result in build differences.
 
 [NOTE]
