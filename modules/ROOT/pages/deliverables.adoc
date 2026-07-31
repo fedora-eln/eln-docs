@@ -47,6 +47,18 @@ Then run:
 toolbox enter eln-toolbox
 ```
 
+== Bootable (bootc) image
+
+As a part of the compose, we build https://docs.fedoraproject.org/en-US/bootc/[bootable container (bootc) images] which are then published to Quay.io image registry under the name ``quay.io/fedora/eln-bootc``.
+
+This can be used as any other bootc image.
+A simple way of testing these on Linux with https://github.com/bootc-dev/bcvk[bcvk] (packaged in Fedora and EPEL 10):
+
+```
+podman pull quay.io/fedora/eln-bootc:latest
+bcvk ephemeral run-ssh quay.io/fedora/eln-bootc:latest
+```
+
 == Cloud images
 
 As a part of the compose, we build Cloud images for AWS, Azure, and GCP.  These are uploaded to each cloud provider on a regular basis as a community offering.
