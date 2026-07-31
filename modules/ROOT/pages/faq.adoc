@@ -27,9 +27,12 @@ What are the differences between Rawhide and ELN?::
     and https://docs.fedoraproject.org/en-US/eln/buildroot/#_distribution_related_macro_definitions[global macros]
     that can result in build differences.
 
-    Note: Many packages have %if fedora / rhel conditionals in their specfiles that produce
-    differences between the built Rawhide and ELN packages.  Listing all of those differences
-    is beyond the scope of this document.
+[NOTE]
+====
+Many packages have ``0%{?fedora}`` and/or ``0%{?rhel}`` conditionals in their specfiles that produce
+differences between the built Rawhide and ELN packages.  Listing all of those differences
+is beyond the scope of this document.
+====
 
 What packaging guidelines does ELN follow?::
 
