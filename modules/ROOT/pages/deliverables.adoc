@@ -75,8 +75,8 @@ As a part of the compose, we build GNOME, KDE, and COSMIC Live images similar to
 These images contain content from the ELN Extras repository which will not necessarily be in the next RHEL version but may end up in EPEL.
 
 Live media can be found here:
-https://download.fedoraproject.org/pub/eln/1/Extras/x86_64/iso/[x86_64]
-https://download.fedoraproject.org/pub/eln/1/Extras/aarch64/iso/[aarch64]
+https://download.fedoraproject.org/pub/eln/1/AltImages/x86_64/iso/[x86_64]
+https://download.fedoraproject.org/pub/eln/1/AltImages/aarch64/iso/[aarch64]
 
 == Mock environment
 
