@@ -95,7 +95,7 @@ which are often used to provide subpackages that have been unshipped or otherwis
 * similarly to regular -epel packages, the package needs to only produce the needed subpackages and nothing else
 * the package needs to be manually built for ELN from the "eln" branch in dist-git
 * the SRPM name has to be different from the corresponding Rawhide package (https://src.fedoraproject.org/rpms/libxcrypt-epel[example])
-* the SRPM name has to be added to the exclusion list in ELNBuildSync to avoid accidental rebuilds (https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/commit/f50f8d99596cee37fa2b15cd3c62f1c8e86e72fa[example])
+* the SRPM name has to be added to the ``configuration.control.exclude`` list in https://github.com/fedora-eln/elnbuildsync-config/blob/production/elnbuildsync_dynamic.yaml[ELNBuildSync dynamic configuration] to avoid accidental rebuilds
 * the needed subpackages need to be added to Content Resolver for ELN Extras as usual (https://github.com/minimization/content-resolver-input/pull/1124[example])
 
 == ELN Extras Frequently Asked Questions

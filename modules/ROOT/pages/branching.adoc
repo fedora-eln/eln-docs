@@ -6,7 +6,7 @@ Fedora Branching happens every 6 months, when Fedora Rawhide branches for the ne
 
 === Branching Tasks ===
 . Pause the Fedora ELN package rebuilds in ELNBuildSync
-** Set the `configuration.control.pause` value in the ELNBuildSync https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to `true`
+** Set the `configuration.control.pause` value in https://github.com/fedora-eln/elnbuildsync-config/blob/production/elnbuildsync_dynamic.yaml[ELNBuildSync dynamic configuration] to `true`
 . Wait for the Fedora ELN Buildroot to regenerate
 
  $ koji wait-repo eln-build --request
@@ -19,10 +19,10 @@ Fedora Branching happens every 6 months, when Fedora Rawhide branches for the ne
 
  $ git checkout rawhide && git pull && fedpkg --release eln build
 
-. Update `configuration.trigger.rpms` in https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to the next Fedora tag (`f42`)
+. Update `configuration.control.trigger_tag` in https://github.com/fedora-eln/elnbuildsync-config/blob/production/elnbuildsync_dynamic.yaml[ELNBuildSync dynamic configuration] to the next Fedora tag (`f42`)
 
 . Resume ELN package rebuilds in ELNBuildSync
-** Set the `configuration.control.pause` value in https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to `false`
+** Set the `configuration.control.pause` value in https://github.com/fedora-eln/elnbuildsync-config/blob/production/elnbuildsync_dynamic.yaml[ELNBuildSync dynamic configuration] to `false`
 
 . Once a new batch has been processed,footnote:tagdelay[This timing avoids an accidental mass rebuild from being started due to the mass retagging of rawhide builds with the new tag.] then update `rpm.macro.eln` for the `eln-build` Koji tag with the next available number.footnote:elntag[Current settings are visible on the https://koji.fedoraproject.org/koji/taginfo?tagID=22493[eln-build koji page]] For example, if the current value is 141
 
@@ -37,7 +37,7 @@ This event occurs at the Fedora Branching event that corresponds to the launch o
 === Branching Tasks ===
 ==== On the Fedora Side ====
 . Pause the Fedora ELN package rebuilds in ELNBuildSync
-** Set the `configuration.control.pause` value in the ELNBuildSync https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to `true`
+** Set the `configuration.control.pause` value in https://github.com/fedora-eln/elnbuildsync-config/blob/production/elnbuildsync_dynamic.yaml[ELNBuildSync dynamic configuration] to `true`
 . Wait for any ongoing Fedora ELN builds to complete.
 ** Detecting this requires access to the ELNBuildSync logs which are non-public at this time.
 . Disable the DistroBuildSync from Fedora ELN to CentOS Stream
@@ -60,7 +60,7 @@ This event occurs at the Fedora Branching event that corresponds to the launch o
 .. Rebuild the `fedora-eln-release` package.
 . Rebuild the post-branch changes to the `fedora-repos` package.
 . Update `kiwibuild_version` in https://forge.fedoraproject.org/releng/pungi-fedora/src/branch/eln/fedora/override.conf[pungi configuration] to the same value as `rpm.macro.rhel` above
-. Update `configuration.trigger.rpms` in https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to the next Fedora tag (`f41`)
+. Update `configuration.control.trigger_tag` in https://github.com/fedora-eln/elnbuildsync-config/blob/production/elnbuildsync_dynamic.yaml[ELNBuildSync dynamic configuration] to the next Fedora tag (`f41`)
 . Resume ELN package rebuilds in ELNBuildSync
-** Set the `configuration.control.pause` value in https://gitlab.com/redhat/centos-stream/ci-cd/distrosync/distrobuildsync-config/-/blob/main/distrobaker.yaml[distrobaker.yaml] to `false`
+** Set the `configuration.control.pause` value in https://github.com/fedora-eln/elnbuildsync-config/blob/production/elnbuildsync_dynamic.yaml[ELNBuildSync dynamic configuration] to `false`
 . Schedule a mass-rebuild of Fedora ELN to pick up any pending RHEL X+1 changes.footnote:[For example, frame pointer enablement is conditionalized as `%if 0%{?rhel} >= 11`]
