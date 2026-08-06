@@ -1,18 +1,18 @@
+* xref:deliverables.adoc[Deliverables]
 * xref:sig.adoc[SIG]
 * xref:faq.adoc[FAQ]
 
-* Docs
+* Content Set
+** xref:content_set.adoc[ELN]
+** xref:extras.adoc[ELN Extras]
 
-** xref:deliverables.adoc[Deliverables]
-** xref:content_set.adoc[Content Set]
+* Development
 ** xref:buildroot.adoc[Buildroot]
 ** xref:ftbfs.adoc[Resolving ELN build failures]
 ** xref:eln-branch.adoc[ELN Branch]
 ** xref:eln-macros.adoc[ELN Macros]
-** xref:extras.adoc[ELN Extras]
 
 * Infrastructure
 ** xref:branching.adoc[Events]
 ** xref:compose.adoc[Compose]
-
-* https://elnbuildsync.fedoraproject.org/status.html[Rebuild Status]
+** https://elnbuildsync.fedoraproject.org/status.html[Rebuild Status]
