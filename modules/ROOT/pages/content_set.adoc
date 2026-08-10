@@ -61,6 +61,14 @@ The following RHEL Add-Ons have corresponding repositories in ELN for their spec
 The content of those repositories is defined in their respective groups of
 https://forge.fedoraproject.org/releng/fedora-comps/src/branch/main/comps-eln.xml.in.in[fedora-comps].
 
+While technically not part of the RHEL compose or package set, an equivalent
+to RHEL Extensions is also available:
+
+- Extensions
+
+The content of this repository is defined in
+https://forge.fedoraproject.org/releng/pungi-fedora/src/branch/eln/shared/additional_and_filter_packages.conf[pungi-fedora].
+
 == How to Mark a Package as Unwanted
 
 When a package previously in RHEL becomes obsolete, or is unsupportable in RHEL
